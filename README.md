@@ -1,7 +1,7 @@
 # Update a File Through a Python Algorithm
 
 ## Project Description
-Company systems restrict content access using an IP address allow list stored in `allow_list.txt`. To maintain security, a separate remove list identifies IP addresses that must lose access. I developed a Python algorithm to automate updating `allow_list.txt` by removing these unauthorized IP addresses. 
+Company systems restrict content access using an IP address allow list stored in `allow_list.txt`. To maintain security, a separate remove list identifies IP addresses that must lose access. I developed a Python algorithm to automate updating `allow_list.txt` by removing these unauthorised IP addresses. 
 
 *Note: The complete, executable script can be found in the Summary section at the bottom of this file.*
 
@@ -27,7 +27,7 @@ Next, I used the `.read()` method to convert the file contents into a string for
     ip_addresses = file.read()
 ```
 
-Inside the `with` statement, calling `.read()` on the `file` variable converts the contents into a string. I assigned this string output to the variable `ip_addresses`. This process converts the `allow_list.txt` file into a string format, enabling my Python program to later organize and extract the data.
+Inside the `with` statement, calling `.read()` on the `file` variable converts the contents into a string. I assigned this string output to the variable `ip_addresses`. This process converts the `allow_list.txt` file into a string format, enabling my Python program to later organise and extract the data.
 
 ### 3. Convert the String into a List
 To manipulate individual IP addresses, I split the string into a structured list:
@@ -39,7 +39,7 @@ ip_addresses = ip_addresses.split()
 Applying `.split()` to the `ip_addresses` string converts it into a list by splitting the text at each whitespace. Reassigning this list back to `ip_addresses` makes it easier to remove specific IP addresses later in the algorithm.
 
 ### 4. Iterate Through the Remove List
-I set up a loop to cycle through every unauthorized IP address that needs to be restricted:
+I set up a loop to cycle through every unauthorised IP address that needs to be restricted:
 
 ```python
 for element in remove_list:
@@ -72,7 +72,7 @@ The `.join()` method converts the `ip_addresses` list into a single string, usin
 ---
 
 ## Summary
-I created an algorithm to remove IP addresses from `remove_list` from the `allow_list.txt` file. The script reads the file into a list, safely removes the matching unauthorized addresses using a loop, and then converts the list back into a string to overwrite the original file.
+I created an algorithm to remove IP addresses from `remove_list` from the `allow_list.txt` file. The script reads the file into a list, safely removes the matching unauthorised addresses using a loop, and then converts the list back into a string to overwrite the original file.
 
 ### Complete Final Code
 ```python
